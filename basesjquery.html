@@ -1,0 +1,83 @@
+
+<!--este html contiene curso rapido de jquery-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso js</title>
+    <script src="jquery-3.6.0.min.js"> </script>
+</head>
+<body>
+    <h1>mi primer boton</h1>
+    <div id="divOne">   
+        <input type="text" id="textoOne">
+        <button id="botonOne">Escribir</button>   
+    </div>
+    <div id="divTwo">
+          mi escrito
+          <button id="botonTwo">borrar</button>
+    </div>
+    <div>
+        <select id="selectOne">
+            <option > selecciona </option>
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+            <option value="3">Valor 3</option>
+            
+        </select>
+        <button id="botonTree">ver</button>
+    </div>
+    <div>
+        <label>Si</label>
+        <input type="radio" id="radioOne" name="mi radio">
+        <label">No</label>
+        <input type="radio" id="radioTwo" name="mi radio">
+    </div>
+    <div>
+   <label>mi valor </label>  
+    <input type="checkbox" id="checkboxOne"  >
+    </div> 
+
+    <div>
+
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+<script type="text/javascript"> 
+$(document).ready(function(){
+         // agregamos valor a un campo de texto
+        $('#textoOne').val("ingrese el texto")
+        $('#botonOne').click(function(){
+        // obtenemos el valor dentro de un campo de texto
+            alert($('#textoOne').val())
+        });
+        $('#botonTwo').click(function(){
+        // obtenemos el valor dentro de un div de texto
+            alert($('#divTwo').text())
+        });
+        $('#botonTree').click(function(){
+        // obtenemos el valor dentro de un div de texto
+            alert($('#selectOne').val())
+        });
+        // validacion del checkbox
+        $('#checkboxOne').click(function(){
+            if($('#checkboxOne').is(':checked')){
+                console.log("activo");
+            }
+            else{
+                console.log("inactivo");
+            }
+        });
+          // validancion del radiobutton
+        $('#radioOne').click(function(){
+                    alert("dijo que si")
+        });
+        $('#radioTwo').click(function(){
+                    alert("dijo que No")
+        });
+
+
+});
+</script>

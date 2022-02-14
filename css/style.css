@@ -1,0 +1,38 @@
+/* este css contiene los estilos
+se debe tener en cuenta que gana el estilo que este mas abajo por codificacion
+*/
+html{
+    font-family: cursive;
+}
+
+body{
+    background-color: black;
+    text-align: center;
+    }
+
+h1{
+    color: purple;
+}
+h2, h3 {
+    color: blue;
+    line-height: 1rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-size: 20px ;
+    font-style: italic;
+}
+
+.borderImg {
+    border: 10px dashed red;
+}
+
+ul li {
+    color: blueviolet;
+    font-size: 20 px;
+}
+
+ul > li {
+    color: yellow
+}
